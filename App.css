@@ -1,0 +1,192 @@
+/* src/App.css */
+
+/* Estilos gerais para o aplicativo */
+body {
+  font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto ao corpo */
+  margin: 0;
+  padding: 0;
+  background-color: #7DA0CA; /* Cor de fundo geral do corpo */
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport */
+  position: relative; /* Adiciona posição relativa para o posicionamento absoluto dos elementos internos */
+}
+
+.App-header {
+  background-color: #021024; /* Cor de fundo do cabeçalho */
+  width: 100%; /* Largura total */
+  height: 60px; /* Altura do cabeçalho */
+  padding: 12px 20px; /* Espaçamento interno do cabeçalho */
+  color: white; /* Cor do texto */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alinha o conteúdo no cabeçalho */
+  position: relative; /* Adiciona posição relativa para alinhar elementos filhos */
+  z-index: 2; /* Garante que o cabeçalho esteja acima da seção abaixo */
+}
+
+.header-text {
+  font-size: 1.5rem; /* Tamanho da fonte do texto do cabeçalho */
+}
+
+.login-button {
+  width: 154px; /* Largura do botão */
+  height: 50px; /* Altura do botão */
+  background-color: #22833D; /* Cor de fundo do botão */
+  color: white; /* Cor do texto */
+  border: none;
+  padding: 10px 20px; /* Espaçamento interno do texto dentro do botão */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 20px; /* Borda redonda */
+}
+
+.login-button:hover {
+  background-color: #185C2B; /* Cor de fundo mais escura no hover */
+}
+
+/* Nova div de separação abaixo do cabeçalho */
+.header-separator {
+  background-color: #021024; /* Cor de fundo igual ao cabeçalho */
+  width: 100%; /* Largura total */
+  height: 10px; /* Altura da nova div */
+  position: relative; /* Posição relativa para garantir alinhamento */
+  z-index: 1; /* Garante que fique abaixo do cabeçalho */
+}
+
+.gradient-section {
+  width: 100%; /* Largura total */
+  height: 341.3px; /* Altura da seção com gradiente */
+  background: linear-gradient(0deg, #052659 0%, #021024 100%); /* Gradiente linear invertido */
+  position: relative; /* Adiciona posição relativa para alinhar elementos filhos */
+  z-index: 1; /* Coloca a seção abaixo do cabeçalho e acima da nova div */
+  box-sizing: border-box; /* Inclui padding e bordas na largura total */
+  padding: 30px; /* Ajusta o padding interno da seção */
+  overflow: hidden; /* Garante que nada ultrapasse as bordas da seção */
+}
+
+.gradient-content {
+  display: flex; /* Usa flexbox para alinhamento vertical */
+  flex-direction: column; /* Alinha os itens na coluna */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  margin-left: calc(50% - 290px); /* Ajusta a margem para centralizar com base no título */
+  max-width: 600px; /* Largura máxima do texto */
+}
+
+.question-text {
+  font-size: 1.8rem; /* Aumenta o tamanho do texto da pergunta */
+  color: white; /* Cor do texto */
+  margin-bottom: 10px;
+}
+
+.answer-text {
+  font-size: 1rem;
+  color: white; /* Cor do texto */
+  margin-bottom: 20px;
+}
+
+.schedule-button {
+  width: 154px; /* Largura do botão */
+  height: 50px; /* Altura do botão */
+  background-color: #22833D; /* Cor de fundo do botão */
+  color: white; /* Cor do texto */
+  border: none;
+  padding: 10px 20px; /* Espaçamento interno do texto dentro do botão */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 20px; /* Borda redonda */
+  margin-top: 20px; /* Adiciona espaço entre o texto e o botão */
+}
+
+.schedule-button:hover {
+  background-color: #185C2B; /* Cor de fundo mais escura no hover */
+}
+
+.content-wrapper {
+  display: flex; /* Usar Flexbox para alinhar os elementos lado a lado */
+  justify-content: center; /* Centraliza o conteúdo dentro do wrapper */
+  gap: 20px; /* Espaçamento entre os elementos */
+  width: 100%; /* Largura total */
+  padding: 20px; /* Adiciona um padding ao wrapper */
+  box-sizing: border-box; /* Inclui padding e bordas na largura total */
+}
+
+.propositos-section {
+  background-color: #7DA0CA; /* Cor de fundo da seção "PROPOSITOS" */
+  width: 50%; /* Ajusta a largura da seção para 50% */
+  padding: 30px; /* Espaçamento interno da seção */
+  box-sizing: border-box; /* Inclui padding e bordas na largura total */
+}
+
+.propositos-content {
+  max-width: 600px; /* Largura máxima do conteúdo */
+}
+
+.propositos-title {
+  font-size: 2rem; /* Tamanho da fonte do título */
+  color: #021024; /* Cor do título */
+  margin-bottom: 10px;
+}
+
+.propositos-text {
+  font-size: 1rem;
+  color: #021024; /* Cor do texto */
+}
+
+/* Estilos da seção "DIFERENCIAIS" */
+.rectangle {
+  width: 400px; /* Ajusta a largura do retângulo */
+  height: 300px; /* Altura do retângulo */
+  background-color: #004598; /* Cor de fundo do retângulo */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno do retângulo */
+  box-sizing: border-box; /* Inclui padding e bordas na largura total */
+  display: flex; /* Usar Flexbox para alinhar elementos internos */
+  flex-direction: column; /* Alinha os itens na coluna */
+  justify-content: flex-start; /* Alinha o conteúdo ao topo */
+  margin: 20px; /* Espaçamento externo ao redor do retângulo */
+}
+
+.rectangle-title {
+  font-size: 1.8rem; /* Tamanho da fonte do título */
+  color: white; /* Cor do texto */
+  margin-bottom: 10px;
+}
+
+.rectangle-text {
+  font-size: 1rem; /* Tamanho da fonte do texto */
+  color: white; /* Cor do texto */
+}
+
+/* Estilos da nova seção branca */
+.new-rectangle {
+  width: 80%; /* Largura da nova div */
+  max-width: 1200px; /* Largura máxima da nova div */
+  height: 400px; /* Altura da nova div */
+  background-color: white; /* Cor de fundo da nova div */
+  border: 1px solid #021024; /* Borda ao redor da nova div */
+  border-radius: 15px; /* Borda arredondada */
+  margin-top: 20px; /* Espaçamento acima da nova div */
+  padding: 20px; /* Espaçamento interno da nova div */
+  box-sizing: border-box; /* Inclui padding e bordas na largura total */
+  display: flex; /* Usar Flexbox para alinhamento interno */
+  flex-direction: column; /* Alinha os itens na coluna */
+}
+
+.new-title {
+  font-size: 2rem; /* Tamanho da fonte do título */
+  color: #021024; /* Cor do título */
+  margin-bottom: 10px;
+}
+
+.new-text {
+  font-size: 1rem; /* Tamanho da fonte do texto */
+  color: #021024; /* Cor do texto */
+}
